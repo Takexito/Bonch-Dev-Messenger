@@ -1,5 +1,23 @@
 <resources>
     <string name="app_name">Bonch Dev Messenger</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="logo">Logo</string>
+    <string name="email">Email</string>
+    <string name="pass">Pass</string>
+    <string name="send_icon">Send icon</string>
+    <string name="write_text">Write text</string>
+    <string name="mail">Takexito@Gmail.com</string>
+    <string name="name">Takexito</string>
+    <string name="confrim_email">Confrim Email</string>
+    <string name="change_pass">Change Pass</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="password">Password</string>
+    <string name="new_password">New Password</string>
+    <string name="re_password">Re password</string>
+    <string name="confirm">Confirm</string>
+    <string name="change_password">Change Password</string>
+    <string name="names">Name</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     
