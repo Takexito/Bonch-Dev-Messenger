@@ -6,7 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".ui.activities.MainAppActivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/message_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/design_default_color_surface"
@@ -20,14 +33,14 @@
             android:layout_height="40dp"
             android:layout_marginEnd="8dp"
             android:background="@color/design_default_color_on_primary"
+            android:contentDescription="@string/send_icon"
             android:scaleX="1.4"
             android:scaleY="1.4"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/message_et"
             app:layout_constraintTop_toTopOf="@+id/message_et"
-            app:srcCompat="@drawable/ic_send_24px"
-            android:contentDescription="@string/send_icon" />
+            app:srcCompat="@drawable/ic_send_24px" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/message_et"
@@ -42,10 +55,12 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/message_text_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/write_text"
-                android:maxHeight="200dp" />
+                android:maxHeight="200dp"
+                android:textColor="@color/colorPrimaryDark" />
         </com.google.android.material.textfield.TextInputLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 

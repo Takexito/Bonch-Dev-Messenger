@@ -80,13 +80,12 @@
         app:layout_constraintTop_toBottomOf="@+id/password_confirm_et" />
 
     <ImageView
-        android:id="@+id/logo_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/padding_64"
+        android:contentDescription="@string/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_logo"
-        android:contentDescription="@string/logo" />
+        app:srcCompat="@drawable/ic_logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
